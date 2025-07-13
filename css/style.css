@@ -139,3 +139,57 @@ body {
 .side-menu a:hover {
   text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+  }
+
+  .content {
+    background-color: #1a1a1a;
+  }
+
+  .content p {
+    color: #ffffff;
+  }
+
+  .content h {
+    color: #ffffff;
+  }
+
+  .footer-links a {
+    color: #dddddd;
+  }
+
+  .content a {
+    color: lightblue;
+  }
+
+  .content a:visited {
+    color: violet;
+  }
+
+  .menu-button {
+    background-color: #282828;
+  }
+
+  .menu-button:hover {
+    background-color: #383838;
+  }
+
+  .bar {
+    background-color: white;
+  }
+
+  .side-menu {
+    background-color: #282828;
+  }
+
+  .side-menu a {
+    color: white;
+  }
+
+  .side-menu a:visited {
+    color: white;
+  }
+}
