@@ -1,23 +1,141 @@
 body {
-    margin: 0;
-    background-color: #330022;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-  }
-  
-  .info-box {
-    background-color: white;
-    padding: 2rem 4rem;
-    border-radius: 24px;
-    text-align: center;
-  }
-  
-  .info-box p {
-    margin: 0;
-    color: #8080ff;
-    font-size: 2rem;
-  }
-  
+  margin: 0;
+  padding: 8rem 12rem;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e9ff;
+  font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.content {
+  background-color: white;
+  border-radius: 24px;
+  flex: 1;
+  padding: 3rem 4rem;
+  position: relative;
+  min-height: 0;
+}
+
+.content p {
+  color: #000000;
+}
+
+.content h {
+  color: #000000;
+  font-size: xx-large;
+}
+
+.content a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color: purple;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  font-size: small;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #404040;
+  margin: 0 3.5rem;
+  text-decoration: none;
+}
+
+.menu-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #e9e9ff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  z-index: 1001;
+}
+
+.menu-button:hover {
+  background-color: #cfcfff;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 2.5px 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* menu button hamburger to x animation */
+
+.menu-button.active .top {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-button.active .middle {
+  opacity: 0;
+}
+
+.menu-button.active .bottom {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* side menu */
+
+.side-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0;
+  background-color: #e9e9ff;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  border-radius: 24px;
+}
+
+.side-menu.open {
+  width: 250px;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 1.5em;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 1em;
+  text-align: right;
+  text-wrap: false;
+}
+
+.side-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.side-menu a:visited {
+  color: black;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
