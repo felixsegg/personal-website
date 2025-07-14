@@ -153,6 +153,25 @@ body {
   text-decoration: underline;
 }
 
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo-dark,
+.logo-light {
+  display: none;
+  height: 60px;
+  transition: opacity 0.3s;
+}
+
+@media (prefers-color-scheme: light) {
+  .logo-light {
+    display: inline;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000000;
@@ -216,5 +235,9 @@ body {
 
   .side-menu a:visited {
     color: white;
+  }
+
+  .logo-dark {
+    display: inline;
   }
 }
