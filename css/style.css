@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #e9e9ff;
-  font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .content {
@@ -86,14 +86,14 @@ body {
   width: 20px;
   height: 2px;
   background-color: black;
-  margin: 2.5px 0;
+  margin: 3px 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 /* menu button hamburger to x animation */
 
 .menu-button.active .top {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .menu-button.active .middle {
@@ -101,7 +101,7 @@ body {
 }
 
 .menu-button.active .bottom {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* side menu */
