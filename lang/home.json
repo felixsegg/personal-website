@@ -1,0 +1,15 @@
+{
+    "body": {
+        "de": {
+            "content": "Willkommen auf meiner Webseite!\n\nAktuell ist hier leider noch nicht so viel los. Aber das soll sich bald ändern, ich arbeite aktiv dran! Wenn Dich der Fortschritt interessiert, schau doch gerne mal in mein <a href=\"https://github.com/felixsegg\"target=\"_blank\">GitHub</a> rein, da findest Du das Projekt dieser Seite."
+        },
+        "en": {
+            "content": "Welcome to my website!\n\nUnfortunately, there isn't much going on here at the moment. But that will change soon, I'm actively working on it! If you're interested in the progress, feel free to check out my <a href=\"https://github.com/felixsegg\"target=\"_blank\">GitHub</a>, where you'll find the project for this site."
+        }
+    },
+    "meta": {
+        "menu": true,
+        "footer": true,
+        "lang-switch" : true
+    }
+}

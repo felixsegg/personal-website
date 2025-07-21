@@ -1,0 +1,10 @@
+{
+    "body": {
+        "de": {
+            "lang-switch": "EN | <strong>DE</strong>"
+        },
+        "en": {
+            "lang-switch": "<strong>EN</strong> | DE"
+        }
+    }
+}

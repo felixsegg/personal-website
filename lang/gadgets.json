@@ -1,0 +1,17 @@
+{
+    "body": {
+        "de": {
+            "title": "Spielereien",
+            "content": "Hier werden bald ein paar kleinere Spielereien verfügbar sein die ich entwickelt habe, wie im Browser ausführbare JavaScript-Anwendungen und HTML5-Spiele."
+        },
+        "en": {
+            "title": "Gadgets",
+            "content": "A few minor gadgets that I have developed will soon be available here, such as JavaScript applications that can be run in a browser and HTML5 games."
+        }
+    },
+    "meta": {
+        "menu": true,
+        "footer": true,
+        "lang-switch" : true
+    }
+}

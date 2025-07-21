@@ -1,0 +1,14 @@
+{
+    "body": {
+        "de": {
+            "title": "Externe Links"
+        },
+        "en": {
+            "title": "External Links"}
+    },
+    "meta": {
+        "menu": true,
+        "footer": true,
+        "lang-switch" : true
+    }
+}

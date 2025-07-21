@@ -1,0 +1,17 @@
+{
+    "body": {
+        "de": {
+            "title": "Persönliches",
+            "content": "Platzhalter"
+        },
+        "en": {
+            "title": "Personal",
+            "content": "Placeholder"
+        }
+    },
+    "meta": {
+        "menu": true,
+        "footer": true,
+        "lang-switch" : true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "body": {
+        "de": {
+            "title": "Geschäftliches",
+            "content": "Hier werden Infos zu meiner Arbeit im professionellen Kontext stehen, sobald es dazu ein bisschen mehr zu berichten gibt."
+        },
+        "en": {
+            "title": "Business",
+            "content": "Information about my work in a professional context will be posted here as soon as there is a little more to report."
+        }
+    },
+    "meta": {
+        "menu": true,
+        "footer": true,
+        "lang-switch" : true
+    }
+}

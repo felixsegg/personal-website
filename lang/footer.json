@@ -1,0 +1,12 @@
+{
+    "body": {
+        "de": {
+            "imprint": "Impressum",
+            "contact": "Kontakt"
+        },
+        "en": {
+            "imprint": "Imprint",
+            "contact": "Contact"
+        }
+    }
+}
