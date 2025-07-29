@@ -159,6 +159,10 @@ body {
   text-overflow: ellipsis;
 }
 
+.side-menu li.active a {
+  font-weight: bolder;
+}
+
 .side-menu a:visited {
   color: black;
 }

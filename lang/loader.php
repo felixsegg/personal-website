@@ -17,3 +17,4 @@ $translations = include BASE_PATH . '/lang/lang.php';
 function t(string $section, string $key, string $lang, array $translations): string {
     return $translations[$section][$lang][$key] ?? '';
 }
+
