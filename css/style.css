@@ -8,6 +8,15 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
 .content {
   background-color: white;
   border-radius: 24px;
@@ -47,32 +56,6 @@ body {
 
 .content a:visited {
   color: purple;
-}
-
-.footer-links {
-  margin-top: 1rem;
-  font-size: small;
-  text-align: center;
-}
-
-.footer-links a {
-  color: #404040;
-  margin: 0 3.5rem;
-  text-decoration: none;
-}
-
-.lang-switch {
-  position: absolute; 
-  top: -4rem; 
-  right: 2.5rem;
-  font-family: inherit;
-  color: #404040;
-}
-
-.lang-switch a {
-  color: inherit;
-  font-size: 16px;
-  text-decoration: none;
 }
 
 .menu-button {
@@ -171,6 +154,38 @@ body {
   text-decoration: underline;
 }
 
+.footer-links {
+  margin-top: 1rem;
+  font-size: small;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #404040;
+  margin: 0 3.5rem;
+  text-decoration: none;
+}
+
+.lang-switch {
+  position: absolute;
+  top: -4rem;
+  right: 2.5rem;
+  font-family: inherit;
+  color: #404040;
+}
+
+.lang-switch a {
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.lang-switch a:visited {
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -263,6 +278,14 @@ body {
     color: white;
   }
 
+  .content a {
+    color: lightblue;
+  }
+
+  .content a:visited {
+    color: violet;
+  }
+
   .footer-links a {
     color: #dddddd;
   }
@@ -271,12 +294,9 @@ body {
     color: #dddddd;
   }
 
-  .content a {
-    color: lightblue;
-  }
-
-  .content a:visited {
-    color: violet;
+  .lang-switch a,
+  .lang-switch a:visited {
+    color: inherit;
   }
 
   .menu-button {
