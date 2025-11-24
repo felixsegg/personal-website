@@ -197,7 +197,7 @@ return [
             "title" => "Abschlussarbeiten",
             "desc" => "Hier findest Du meine Abschlussarbeiten.",
             "bachelor-title" => "Bachelorarbeit",
-            "bachelor-desc" => "Meine Bachelorarbeit liegt gerade noch meinen Betreuern zur Begutachtung vor. Bitte gedulde Dich noch ein wenig, bis ich die finale Bewertung erhalten habe, dann werde ich sie hier bereitstellen!\nDie Bewertung <s>sollte bis spätestens Mitte August 2025 erfolgt sein</s> dauert leider noch etwas länger, da es wohl unerwartete technische Schwierigkeiten an meiner Alma Mater gibt.",
+            "bachelor-desc" => "Hier kannst du dir meine Bachelorarbeit anschauen. Die zugehörigen Repos findest du <a href=\"https://github.com/felixsegg/bachelors-thesis\" target=\"_blank\">hier</a>.",
             "master-title" => "Masterarbeit",
             "master-desc" => "...das dauert noch ein paar Semester ;)"
         ],
@@ -205,7 +205,7 @@ return [
             "title" => "Theses",
             "desc" => "Here you can find my final theses.",
             "bachelor-title" => "Bachelor's Thesis",
-            "bachelor-desc" => "My bachelor thesis is currently being reviewed by my supervisors. Please be patient until I receive the final assessment, then I will make it available here!\nThe assessment <s>should be completed by mid-August 2025 at the latest</s> takes some more time, due to unexpected technical difficulties at my alma mater.",
+            "bachelor-desc" => "You can view my bachelor thesis here. The corresponding repositories can be found <a href=\"https://github.com/felixsegg/bachelors-thesis\" target=\"_blank\">here</a>. Please note that it is in German.",
             "master-title" => "Master's Thesis",
             "master-desc" => "...that will take a few more semesters ;)"        
         ]

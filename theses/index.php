@@ -23,7 +23,7 @@ $pageDescription = t('theses', 'description', $lang, $translations);
 
     <h2><?= htmlspecialchars(t('theses', 'bachelor-title', $lang, $translations)) ?></h2>
     <p><?= nl2br(t('theses', 'bachelor-desc', $lang, $translations)) ?></p>
-
+    <a href="BA.pdf" target="_blank">Download</a>
     <hr>
 
     <h2><?= htmlspecialchars(t('theses', 'master-title', $lang, $translations)) ?></h2>
