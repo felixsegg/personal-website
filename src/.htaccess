@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^$ /home/ [R=301,L]
+RewriteRule ^$ /de/home/ [R=301,L]
