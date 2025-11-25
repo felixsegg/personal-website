@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% if title %}Felix Seggebäing - {{ title }}{% else %}Felix Seggebäing{% endif %}</title>
+    <meta name="description" content="{{ description | default('') }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if title %}Felix Seggebäing - {{ title }}{% else %}Felix Seggebäing{% endif %}">
+    <meta property="og:description" content="{{ description | default('') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="/assets/icons/preview.png">
+
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg"/>
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Felix Seggebäing"/>
+    <link rel="manifest" href="/manifest.webmanifest"/>
+</head>
+<body>
+<div class="content">
+    {% if langSwitch and langSwitch.length %}
+        <div class="lang-switch">
+            {% for langOption in langSwitch %}
+                {% if langOption.url == page.url %}
+                    <strong>{{ langOption.label }}</strong>
+                {% else %}
+                    <a href="{{ langOption.url }}">{{ langOption.label }}</a>
+                {% endif %}
+                {% if not loop.last %} | {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+
+    <h1>{{ title }}</h1>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <div class="menu-button" id="menuButton">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+    </div>
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            {% set items = menu(lang) %}
+            {% for item in items %}
+                <li class="{% if page.url and page.url.indexOf(item.url) == 0 %}active{% endif %}">
+                    <a href="{{ item.url }}">{{ item.label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
+
+<div class="footer-links">
+    {% set f = footer(lang) %}
+    {% for item in f %}
+        <a href="{{ item.url }}">{{ item.label }}</a>
+        {% if not loop.last %} | {% endif %}
+    {% endfor %}
+</div>
+
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
